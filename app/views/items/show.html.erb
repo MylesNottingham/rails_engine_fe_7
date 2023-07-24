@@ -1,0 +1,9 @@
+<h1><%= @facade.item(params[:id]).name %></h1>
+<br/>
+
+<h3>Description:</h3>
+<p><%= @facade.item(params[:id]).description %></p>
+<br/>
+
+<h3>Unit Price:</h3>
+<p><%= number_to_currency(@facade.item(params[:id]).unit_price) %></p>

@@ -1,0 +1,6 @@
+<h1><%= @facade.merchant(params[:id]).name %></h1>
+
+<h2>Items</h2>
+<% @facade.merchant_items(params[:id]).each do |item| %>
+  <p><%= item.name %></p>
+<% end %>
